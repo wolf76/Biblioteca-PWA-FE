@@ -1,4 +1,9 @@
-# Biblioteca-PWA
+# Biblioteca-PWA-FE
+
+A simple book sharing online web application with family and friends.
+Created using VueJS and Bootstrap-Vue.
+
+> This repo is the froentend application, the backend API is created using RubyOnRails (Biblioteca-API).
 
 ## Project setup
 ```
