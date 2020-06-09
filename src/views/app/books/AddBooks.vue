@@ -13,7 +13,7 @@
             <h3 class="mb-5">Please enter the book title</h3>
             <b-form @submit.prevent="submitBook">
               <b-form-group label="Book Title" class="has-float-label mb-4">
-                <b-form-input type="text" v-model="bookTitle" />
+                <b-form-input type="text" v-model="bookTitle" autofocus />
               </b-form-group>
               <div>
                 <b-button variant="primary" type="submit">
