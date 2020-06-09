@@ -86,9 +86,27 @@ export default {
       });
     },
     deleteBook(bookId) {
-      this.removeBook({
-        bookId: bookId
-      });
+      this.$bvModal.msgBoxConfirm('Please confirm that you want to delete this book.', {
+        title: 'Delete Book',
+        id: 'delete_alert',
+        size: 'md',
+        buttonSize: 'sm',
+        okVariant: 'primary',
+        okTitle: 'YES',
+        cancelVariant: 'light',
+        cancelTitle: 'NO',
+        footerClass: 'p-2',
+        hideHeaderClose: false,
+        centered: true
+      }).then(value => {
+        if(value){
+          this.removeBook({
+            bookId: bookId
+          });
+        }
+      })
+      .catch(err => {
+      })
     }
   },
   created() {
