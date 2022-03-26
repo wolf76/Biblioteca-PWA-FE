@@ -16,7 +16,7 @@
     "chart.js": "2.7.2",
     "core-js": "^3.6.4",
     "firebase": "^7.7.0",
-    "minimist": "^0.2.1",
+    "minimist": "^1.2.6",
     "v-calendar": "^0.9.7",
     "v-contextmenu": "^2.8.0",
     "video.js": "^7.4.1",
